@@ -22,15 +22,15 @@
   h1{font-family:Georgia,"Iowan Old Style",serif;font-weight:600;font-size:clamp(28px,5vw,36px);
      line-height:1.14;margin:0 0 14px;text-wrap:balance}
   .lede{color:var(--muted);font-size:17px;max-width:58ch;margin:0}
-  .group{font-size:12px;letter-spacing:.14em;text-transform:uppercase;font-weight:600;
-         color:var(--accent-ink);margin:0 0 14px}
-  .cards{display:grid;gap:16px}
+  main{display:grid;gap:16px}
   a.card{display:block;text-decoration:none;color:inherit;background:var(--card);
          border:1px solid var(--line);border-radius:12px;padding:20px 24px 22px;
          transition:border-color .15s ease, transform .15s ease, box-shadow .15s ease}
   a.card:hover{border-color:var(--accent);transform:translateY(-2px);box-shadow:0 8px 24px #00000010}
   a.card:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
-  .card h3{font-family:Georgia,"Iowan Old Style",serif;font-size:21px;font-weight:600;margin:0 0 6px}
+  .tag{display:inline-block;font-size:11px;letter-spacing:.12em;text-transform:uppercase;font-weight:600;
+       color:var(--accent-ink);border:1px solid var(--line);border-radius:999px;padding:3px 11px;margin:0 0 12px}
+  .card h2{font-family:Georgia,"Iowan Old Style",serif;font-size:21px;font-weight:600;margin:0 0 6px}
   .card p{margin:0;color:var(--muted);font-size:15px}
   .go{display:inline-block;margin-top:13px;font-size:13px;letter-spacing:.03em;color:var(--accent-ink);font-weight:600}
 </style>
@@ -43,24 +43,23 @@
       experiments. New work is added here as it takes shape.</p>
   </header>
 
-  <section>
-    <h2 class="group">Historical demography</h2>
-    <div class="cards">
-      <a class="card" href="deaths/">
-        <h3>Deaths across Norway</h3>
-        <p>An interactive map of recorded burials by parish in early-modern Norway (c. 1600–1800) —
-           geographic clustering, and how the toll shifts through the year and across the period.</p>
-        <span class="go">Open →</span>
-      </a>
+  <main>
+    <a class="card" href="deaths/">
+      <span class="tag">Church books · 1600–1800</span>
+      <h2>Deaths across Norway</h2>
+      <p>An interactive map of recorded burials by parish in early-modern Norway (c. 1600–1800) —
+         geographic clustering, and how the toll shifts through the year and across the period.</p>
+      <span class="go">Open →</span>
+    </a>
 
-      <a class="card" href="htr/">
-        <h3>Reading the handwriting</h3>
-        <p>A handwriting-recognition model transcribing historical church-book pages: each scan shown
-           beside the machine's reading, placed where it sits on the page.</p>
-        <span class="go">Open →</span>
-      </a>
-    </div>
-  </section>
+    <a class="card" href="htr/">
+      <span class="tag">Church books · 1600–1800</span>
+      <h2>Reading the handwriting</h2>
+      <p>A handwriting-recognition model transcribing historical church-book pages: each scan shown
+         beside the machine's reading, placed where it sits on the page.</p>
+      <span class="go">Open →</span>
+    </a>
+  </main>
 </div>
 </body>
 </html>
