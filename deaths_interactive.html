@@ -63,7 +63,7 @@ function computeNat(){const ud=trail*unitDays();natArr=new Float64Array(nPer);
 function recalc(){buildPrefix();computeNat();render(Math.max(animLo,Math.min(animHi,+document.getElementById("slider").value)));}
 function render(pi){const ud=trail*unitDays(),aE=pEnd[pi],aS=Math.max(0,aE-ud+1);
  for(let p=0;p<P;p++){
-  if(hideEmpty&&!carrier[p]){if(view=="points"){nodes[p].setAttribute("fill","#ececec");dots[p].style.display="none";}else{nodes[p].setAttribute("fill","#FBFAF7");}continue;}
+  if(hideEmpty&&!carrier[p]){if(view=="points"){nodes[p].setAttribute("fill","#ececec");dots[p].style.display="none";}else{nodes[p].setAttribute("fill","#ececec");}continue;}
   const pb=p*(localN+1);const nd=(fs[p]>aE||ls[p]<aE);const v=nd?0:pre[pb+aE+1]-pre[pb+aS];
   if(view=="choro"){nodes[p].setAttribute("fill",nd?"#585858":(v<=0?"#dcd9d2":heatCol(v)));dots[p].style.display="none";}
   else{nodes[p].setAttribute("fill","#ececec");const c=dots[p];
