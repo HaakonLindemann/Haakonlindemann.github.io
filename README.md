@@ -1,9 +1,9 @@
-# Norwegian church-book deaths — interactive map
+# Norwegian church-book demography — interactive tools
 
-An interactive map of recorded burials in Norwegian parish registers (kirkebøker),
-roughly 1600–1800, showing geographic clustering and change over time.
+Live: https://haakonlindemann.github.io/
 
-**Live:** https://haakonlindemann.github.io/
+- `/deaths/` — interactive map of recorded burials by parish (clustering + change over time)
+- `/htr/` — handwriting-recognition transcription previews (ten church-book pages)
 
-The page is fully self-contained (data embedded, no external services). Part of a
-historical climate-demography research project.
+Each page is self-contained (data embedded, no external services). Research project in historical
+climate demography from Norwegian church books (kirkebøker), c. 1600-1800.
